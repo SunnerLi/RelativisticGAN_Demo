@@ -3,17 +3,17 @@
 [![Packagist](https://img.shields.io/badge/Pytorch-0.4.0-red.svg)]()
 [![Packagist](https://img.shields.io/badge/Python-3.5.2-blue.svg)]()
 
-![](https://github.com/SunnerLi/RelativiticGAN_Demo/blob/master/image/render_result/RaLSGAN_result_50_epoch.gif)
+![](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/image/render_result/RaLSGAN_result_50_epoch.gif)
 
 Abstraction
 ---
-This repository simply demonstrates to generate the MNIST digit data with relativistic idea[1]. Furthermore, we modify [the original loss definition](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/models/networks.py) which is adopted in official CycleGAN, and provides [the compatible version of loss script](https://github.com/SunnerLi/RelativiticGAN_Demo/blob/master/loss.py). You can just substitute with the relativistic version. However, the relativistic loss will not work until you revise the optimization part in your own code. At last, the above image shows the result of LSGAN which adopting relativistic trick.      
+This repository simply demonstrates to generate the MNIST digit data with relativistic idea[1]. Furthermore, we modify [the original loss definition](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/models/networks.py) which is adopted in official CycleGAN, and provides [the compatible version of loss script](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/loss.py). You can just substitute with the relativistic version. However, the relativistic loss will not work until you revise the optimization part in your own code. At last, the above image shows the result of LSGAN which adopting relativistic trick.      
 
 Requirement
 ---
 1. OpenCV
 2. Torchvision
-3. [Torchvision_sunner](https://github.com/SunnerLi/Torchvision_sunner)
+3. [Torchvision_sunner](https://github.com/SunnerLi/Torchvision_sunner)([Newest version](https://gitlab.com/SunnerLi/Torchvision_sunner))
 
 Usage
 ---
@@ -28,14 +28,14 @@ $ python3 train.py --type SGAN --epoch 100 --det SGAN
 
 Result
 ---
-In this section, we shows the result of traditional GAN first (without relativistic idea). The mode collapse occurs and the loss curve is awkward at the end.    
-![](https://github.com/SunnerLi/RelativiticGAN_Demo/blob/master/image/render_result/SGAN_result_50_epoch.gif)
-![](https://github.com/SunnerLi/RelativiticGAN_Demo/blob/master/image/loss_curve/RaLSGAN_loss_curve_50_epoch.png)
+For our experiments, we train the each model for 50 epoch, recording the loss value and the render result. In this section, we shows the result of traditional GAN first (without relativistic idea). The mode collapse occurs and the loss curve is awkward at the end.    
+![](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/image/render_result/SGAN_result_50_epoch.gif)
+![](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/image/loss_curve/SGAN_loss_curve_50_epoch.png)
  
 Next, we shows the result of GAN while using the relativistic idea. As you can see, the loss curve can converge normally. The same great converge phenomenon can be proved in LSGAN.    
 
-![](https://github.com/SunnerLi/RelativiticGAN_Demo/blob/master/image/render_result/RSGAN_result_50_epoch.gif)
-![](https://github.com/SunnerLi/RelativiticGAN_Demo/blob/master/image/loss_curve/RSGAN_loss_curve_50_epoch.png)
+![](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/image/render_result/RSGAN_result_50_epoch.gif)
+![](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/image/loss_curve/RSGAN_loss_curve_50_epoch.png)
 
 TODO
 ---
