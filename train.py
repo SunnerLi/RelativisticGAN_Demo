@@ -94,8 +94,8 @@ if __name__ == '__main__':
         visialize(gen_img, os.path.join(args.det, str(i) + '.png'))
 
     # Plot the loss curve
-    plt.plot(range(len(loss_D_list)), loss_D_list, '-o', label = 'D loss')
-    plt.plot(range(len(loss_G_list)), loss_G_list, '-o', label = 'G loss')
+    plt.plot(range(len(loss_D_list)), loss_D_list, '-', label = 'D loss')
+    plt.plot(range(len(loss_G_list)), loss_G_list, '-', label = 'G loss')
     plt.legend()
     plt.title('The loss curve (log scale)')
     plt.savefig(os.path.join(args.det, 'loss.png'))

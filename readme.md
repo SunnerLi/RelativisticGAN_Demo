@@ -5,7 +5,7 @@
 
 Abstraction
 ---
-This repository simply demonstrates to generate the MNIST digit data with relativistic idea. Most important, we provides the compatible version of loss script. You can just substitute with the relativistic version. However, the relativistic loss will not work until you revise the optimization part in your own code.     
+This repository simply demonstrates to generate the MNIST digit data with relativistic idea. Most important, we provides [the compatible version of loss script](https://github.com/SunnerLi/RelativiticGAN_Demo/blob/master/loss.py). You can just substitute with the relativistic version. However, the relativistic loss will not work until you revise the optimization part in your own code.     
 
 Requirement
 ---
@@ -28,4 +28,3 @@ TODO
 ---
 - [ ] Add the training result for 100 epoch
 - [ ] Add the training loss curve
-- [ ] Provide hyper-link to loss script
