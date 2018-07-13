@@ -37,10 +37,6 @@ Next, we shows the result of GAN while using the relativistic idea. As you can s
 ![](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/image/render_result/RSGAN_result_50_epoch.gif)
 ![](https://github.com/SunnerLi/RelativisticGAN_Demo/blob/master/image/loss_curve/RSGAN_loss_curve_50_epoch.png)
 
-TODO
----
-- [ ] Provide the loss curve without taking log
-
 Reference
 ---
 [1]  Alexia Jolicoeur-Martineau, "The relativistic discriminator: a key element missing from standard GAN," arXiv: 1807.00734 [cs.LG], July 2018.
